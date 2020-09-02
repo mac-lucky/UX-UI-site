@@ -89,3 +89,42 @@ main {
   object-fit: cover;
 }
 
+.aboutme {
+  height: 85vh;
+  background: linear-gradient(180deg, #E0C1E9 0%, rgba(222, 195, 195, 0) 100%);
+  display: flex; 
+  width: 100%;
+}
+
+.layout{
+  padding: 0 15%;
+}
+
+
+.aboutme img{
+  width: 325px;
+  height: 326px;
+  float: left;
+  display: flex;
+  margin-top: 15%;
+}
+
+.layout h1 {
+  font-family: Playfair Display;
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 7%;
+  margin-left: 7%;
+}
+
+.layout p1{
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15px;
+  display: flex;
+  margin-left: 7%;
+}
+
