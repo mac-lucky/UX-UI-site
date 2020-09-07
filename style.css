@@ -121,6 +121,7 @@ main {
   display: flex;
   margin-top: 20%;
   margin-right: 10%;
+  margin-bottom: 30px;
 }
 
 .layout h1 {
@@ -149,12 +150,16 @@ main {
   margin-bottom: 36px;
 }
 
-.layout p3{
-  display: flex;
-  
+footer{
+  height: 85vh;
 }
 
-
-
-
+footer h1{
+  text-align: center;
+  margin-top: 10%;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+}
 
