@@ -90,23 +90,23 @@ main {
 }
 
 .aboutme {
-  height: 85vh;
+  height: 100vh;
   background: linear-gradient(180deg, #E0C1E9 0%, rgba(222, 195, 195, 0) 100%);
   display: flex; 
   width: 100%;
 }
 
 .layout{
-  padding: 0 15%;
+  margin-right: 12%;
+  margin-left: 12%;
 }
-
-
 .aboutme img{
   width: 325px;
   height: 326px;
   float: left;
   display: flex;
-  margin-top: 15%;
+  margin-top: 20%;
+  margin-right: 10%;
 }
 
 .layout h1 {
@@ -114,17 +114,26 @@ main {
   font-size: 50px;
   font-style: normal;
   text-align: center;
-  margin-top: 7%;
-  margin-left: 7%;
+  margin-top: 10%;
+  margin-bottom: 70px;
+}
+
+.text {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  letter-spacing: 0.15px;
+  text-align: justify;
 }
 
 .layout p1{
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.15px;
   display: flex;
-  margin-left: 7%;
+  margin-bottom: 45px;
 }
+
+.layout p2{
+  display: flex;
+  margin-bottom: 36px;
+}
+
+
 
