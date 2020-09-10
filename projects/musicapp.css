@@ -96,7 +96,7 @@ header {
   justify-content: space-between;
   margin: auto;
   padding: 3rem 0;
-  text-align: left;
+  margin-top: 10%;
 }
 
 .overview .overviewtext,
