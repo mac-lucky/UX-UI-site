@@ -6,6 +6,16 @@
   text-decoration: none;
 }
 
+h2 {
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.1px;
+  color: #AB75B1;
+
+}
+
 html,
 body {
   width: 100%;
@@ -128,4 +138,142 @@ header {
 
 .approachtext {
   margin-left: 40px;
+}
+
+.uxuiprocess {
+  width: 100%;
+  padding-left: 10%;
+  height: 40vh;
+}
+
+.uxuiprocess img {
+  max-width: 100%;
+  height: auto;
+}
+
+.uxuitext {
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+
+.uxuiwidth {
+  width: 87%;
+}
+
+.uxuiprocess h1 {
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: 0.1px;
+}
+
+.competition {
+  margin-top: 20%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(228, 228, 228);
+}
+
+.competitionalign {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.competition h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: 0.1px;
+  color: #AB75B1;
+}
+
+.competition p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.competition img {
+  width: 50%;
+  height: 50%;
+}
+
+.compbaseline {
+  display: flex;
+  align-items: center;
+}
+
+.compbaseline p {
+  margin-left: 10%;
+}
+
+.competition p1 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+
+.competition p2 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.1px;
+  float: right;
+}
+
+.userresearch {
+  width: 100%;
+  height: 90vh;
+}
+
+.userresearch h2 {
+  padding-bottom: 50px;
+}
+
+.userresearch p {
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+}
+
+.width {
+  margin-top: 8%;
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+}
+
+.left{
+  width: 40%;
+}
+
+.right{
+  margin-top: 100px;
+  width: 40%;
+  margin-left: 20%;
+}
+
+.left img{
+  max-width: 100%;
+  margin-top: 10%;
+}
+
+.userresearch h3{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
