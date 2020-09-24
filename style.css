@@ -19,20 +19,22 @@ header {
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
   display: flex;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 nav {
@@ -54,7 +56,7 @@ nav {
 }
 
 .undername {
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 48px;
 }
 
@@ -75,7 +77,7 @@ nav ul li {
 nav ul li a {
   font-size: 18px;
   text-transform: uppercase;
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   color: black;
 }
 
@@ -106,26 +108,27 @@ main {
 .aboutme {
   height: 100vh;
   background: linear-gradient(180deg, #E0C1E9 0%, rgba(222, 195, 195, 0) 100%);
-  display: flex; 
+  display: flex;
   width: 100%;
 }
 
-.layout{
+.layout {
   margin-right: 12%;
   margin-left: 12%;
 }
-.aboutme img{
+
+.aboutme img {
   width: 325px;
   height: 326px;
   float: left;
   display: flex;
   margin-top: 20%;
   margin-right: 10%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .layout h1 {
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-style: normal;
   text-align: center;
@@ -134,45 +137,54 @@ main {
 }
 
 .text {
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
+  ;
   font-size: 18px;
   letter-spacing: 0.15px;
   text-align: justify;
 }
 
-.layout p1{
+.layout p1 {
   display: flex;
+  letter-spacing: 0.15px;
+  line-height: 27px;
   margin-bottom: 45px;
 }
 
-.layout p2{
+.layout p2 {
   display: flex;
+  line-height: 27px;
+  letter-spacing: 0.15px;
   margin-bottom: 36px;
 }
+.layout p3{
+  line-height: 27px;
+  letter-spacing: 0.15px;
+}
 
-footer{
+footer {
   height: 85vh;
 }
 
-footer h1{
+footer h1 {
   text-align: center;
   margin-top: 10%;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
 }
 
-.contact h1{
-  font-family: Source Sans Pro;
+.contact h1 {
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.15px;
 }
 
-.contact{
-  display: flex;  
+.contact {
+  display: flex;
   margin-left: 15%;
   width: 70%;
   justify-content: space-between;
@@ -180,18 +192,18 @@ footer h1{
   margin-top: 10%;
 }
 
-.contact img{
+.contact img {
   height: 100px;
   width: auto;
 }
 
-.contact p{
+.contact p {
   margin-top: 12px;
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.bottomtext{
-  font-family: Source Sans Pro;
+.bottomtext {
+  font-family: ' Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

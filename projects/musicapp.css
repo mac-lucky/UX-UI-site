@@ -7,9 +7,8 @@
 }
 
 h2 {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
-  font-weight: 600;
   font-size: 48px;
   letter-spacing: 0.1px;
   color: #AB75B1;
@@ -72,7 +71,7 @@ header {
 
 .musiclandpage h1 {
   margin-top: 100px;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -81,7 +80,7 @@ header {
 }
 
 .musiclandpage p {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -115,7 +114,7 @@ header {
 }
 
 .overview h1 {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -125,10 +124,11 @@ header {
 
 .overview p {
   margin-top: 20px;
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 32px;
   letter-spacing: 0.1px;
 }
 
@@ -161,7 +161,7 @@ header {
 }
 
 .uxuiprocess h1 {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -183,7 +183,7 @@ header {
 .competition h1 {
   padding-top: 5%;
   padding-bottom: 5%;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -192,10 +192,11 @@ header {
 }
 
 .competition p {
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 32px;
   letter-spacing: 0.1px;
 }
 
@@ -214,7 +215,7 @@ header {
 }
 
 .competition p1 {
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -223,7 +224,7 @@ header {
 }
 
 .competition p2 {
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -239,41 +240,71 @@ header {
 }
 
 .userresearch h2 {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .userresearch p {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
+  line-height: 133.4%;
   letter-spacing: 0.1px;
 }
 
 .width {
-  margin-top: 8%;
+  margin-top: 5%;
   width: 80%;
   display: flex;
   margin-left: 10%;
 }
 
-.left{
+.left {
   width: 40%;
 }
 
-.right{
+.right {
   margin-top: 100px;
   width: 40%;
   margin-left: 20%;
 }
 
-.left img{
+.left img {
   max-width: 100%;
   margin-top: 10%;
 }
 
-.userresearch h3{
+.userresearch h3 {
   margin-top: 20px;
   margin-bottom: 15px;
   font-size: 22px;
+}
+.persona {
+  display: flex;
+  width: 100%;
+  height: 150vh;
+  background: #F7F7F7;
+}
+
+.personawidth{
+  width: 80%;
+}
+
+.personabg{
+  background-color: #E8E8E8;
+  border-radius: 6px;
+  height: 80vh;
+  margin-top: 10%;
+}
+
+.persona img{
+
+  align-items: center;
+  margin-left: 10%;
+}
+
+.persona p1{
+  letter-spacing: 0.1px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
