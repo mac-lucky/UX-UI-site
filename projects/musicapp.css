@@ -279,6 +279,7 @@ header {
   margin-bottom: 15px;
   font-size: 22px;
 }
+
 .persona {
   display: flex;
   width: 100%;
@@ -286,25 +287,93 @@ header {
   background: #F7F7F7;
 }
 
-.personawidth{
+.personawidth {
   width: 80%;
-}
-
-.personabg{
-  background-color: #E8E8E8;
-  border-radius: 6px;
-  height: 80vh;
-  margin-top: 10%;
-}
-
-.persona img{
-
-  align-items: center;
   margin-left: 10%;
 }
 
-.persona p1{
+.personabg {
+  background-color: #E8E8E8;
+  border-radius: 6px;
+  height: 100vh;
+  margin-top: 10%;
+}
+
+.persona p1 {
   letter-spacing: 0.1px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 18px;
+  line-height: 133.4%;
+  letter-spacing: 0.1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.persona h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 12px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.leftpersona {
+  width: 40%;
+}
+
+.rightpersona{
+  width: 40%;
+   margin-left: 20%;
+}
+
+.leftpersona img {
+  max-width: 100%;
+  margin-top: 10%;
+}
+
+.leftpersona p:nth-of-type(1) {
+  margin-top: 8px;
+}
+
+.leftpersona p:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.leftpersona p:nth-of-type(3) {
+  margin-top: 20px;
+}
+
+.rightpersona h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.rightpersona p:nth-of-type(1) {
+  margin-top: 30%;
+}
+.rightpersona p:nth-of-type(2) {
+  margin-top: 8px;
+}
+.rightpersona p:nth-of-type(3) {
+  margin-top: 8px;
+}
+
+.rightpersona h3:nth-of-type(1) {
+  margin-top: 15%;
+}
+.rightpersona h3:nth-of-type(2) {
+  margin-top: 8%;
+}
+.rightpersona h3:nth-of-type(3) {
+  margin-top: 8%;
 }
