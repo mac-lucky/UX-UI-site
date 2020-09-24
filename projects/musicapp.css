@@ -449,3 +449,24 @@ p {
   height: 100vh;
   width: 100%;
 }
+
+.sketches h2{
+  margin-left: 10%;
+  padding-top: 4%;
+}
+
+.sketches{
+  height: 85vh;
+  width: 100%;
+  background: #f6f6f6;
+}
+
+.sketches img{
+  width: 40%;
+}
+
+.sketches p {
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
