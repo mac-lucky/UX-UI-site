@@ -469,4 +469,20 @@ p {
   margin-left: 15%;
   margin-top: 10%;
 }
+.wireframes h2{
+  padding-top: 4%;
+}
+.wireframes{
+  width: 100%;
+  height: 80vh;
+}
 
+.wireframes p{
+  margin-right: 60%;
+  margin-top: 3%;
+}
+
+.wireframes img{
+  max-width: 100%;
+  margin-top: 5%;
+}
