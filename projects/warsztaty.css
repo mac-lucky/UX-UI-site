@@ -7,6 +7,30 @@
   --playfair: Playfair Display;
   --pro: Source Sans Pro;
 }
+
+/* global styles */
+.section-title {
+  font-family: var(--pro), sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  align-items: center;
+  letter-spacing: 0.1px;
+  display: block;
+}
+
+.section-desc {
+  margin-top: 20px;
+  font-family: var(--pro), sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.65);
+  display: block;
+}
+
 /* Header content */
 
 header {
@@ -104,6 +128,7 @@ header .info .info-right > img {
 main {
   width: 100%;
 }
+/* main section => overview */
 
 .overviewbg {
   width: inherit;
@@ -123,25 +148,6 @@ main {
   width: 45%;
 }
 
-.overview h1 {
-  font-family: var(--pro), sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 44px;
-  align-items: center;
-  letter-spacing: 0.1px;
-}
-
-.overview p {
-  margin-top: 20px;
-  font-family: var(--pro), sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
-  color: rgba(0, 0, 0, 0.65);
-}
 .overview p > span {
   color: #78a9d2;
 }
@@ -151,4 +157,39 @@ main {
 
 .approachtext {
   margin-left: 40px;
+}
+
+/* main section => design-process */
+.design-process {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0;
+}
+.design-process .top,
+.design-process .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-process .top-content,
+.design-process .top-img {
+  width: 45%;
+}
+
+.design-process .top-img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.design-process .top-img > img,
+.design-process .bottom > img {
+  width: 100%;
+}
+
+.design-process .bottom {
+  flex-direction: column;
+}
+
+.design-process .bottom > span {
+  padding-bottom: 2rem;
 }
