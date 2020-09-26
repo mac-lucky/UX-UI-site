@@ -390,3 +390,30 @@ main {
 .flow-people .flow-person > img {
   width: 100%;
 }
+
+/* main => information-architecture */
+
+.information-architecture {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.information-architecture .architecture-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: var(--pro);
+}
+
+.information-architecture .architecture-desc {
+  color: rgba(0, 0, 0, 0.65);
+  font-family: var(--pro);
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 2rem 0 3rem 0;
+  width: 33%;
+}
