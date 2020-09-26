@@ -230,3 +230,48 @@ main {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.65);
 }
+
+/* main => persons */
+
+.persons {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.persons .persons-left {
+  width: 40%;
+  padding-top: 3rem;
+}
+
+.persons .persons-right {
+  width: 55%;
+  padding-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.persons .persons-right .person {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.persons .persons-right .person:nth-child(2),
+.persons .persons-right .person:nth-child(4) {
+  margin-left: 2rem;
+}
+
+.persons .persons-right .person > img {
+  width: 60%;
+}
+
+.persons .persons-right .person .person-name {
+  font-size: 1.5rem;
+  margin-right: 1.7rem;
+  font-style: var(--pro);
+  color: rgba(0, 0, 0, 0.65);
+}
