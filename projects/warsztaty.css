@@ -6,6 +6,7 @@
   text-decoration: none;
   --playfair: Playfair Display;
   --pro: Source Sans Pro;
+  --bg: rgb(228, 228, 228);
 }
 
 /* global styles */
@@ -29,6 +30,10 @@
   letter-spacing: 0.1px;
   color: rgba(0, 0, 0, 0.65);
   display: block;
+}
+
+.lightblue {
+  color: #78a9d2;
 }
 
 /* Header content */
@@ -130,9 +135,9 @@ main {
 }
 /* main section => overview */
 
-.overviewbg {
+.background-bg {
   width: inherit;
-  background: rgb(228, 228, 228);
+  background: var(--bg);
 }
 
 .overview {
@@ -148,9 +153,6 @@ main {
   width: 45%;
 }
 
-.overview p > span {
-  color: #78a9d2;
-}
 .overwiewtext {
   margin-right: 40px;
 }
@@ -192,4 +194,39 @@ main {
 
 .design-process .bottom > span {
   padding-bottom: 2rem;
+}
+
+/* main => resarch */
+
+.research {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.research .research-left {
+  padding-top: 3rem;
+  width: 45%;
+}
+
+.research .research-right {
+  width: 45%;
+  padding-top: 6rem;
+}
+
+.research .research-right > span {
+  padding-bottom: 2rem;
+}
+
+.research .research-right #graph {
+  width: 100%;
+}
+
+.research .research-right > span:nth-child(5) {
+  text-align: right;
+}
+.research .research-right .section-desc > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
 }
