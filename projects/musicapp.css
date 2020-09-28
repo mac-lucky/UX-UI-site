@@ -651,3 +651,18 @@ p {
   margin-top: 5%;
 }
 
+.white{
+  height: 30vh;
+  background: white;
+  width: 100%;
+}
+
+.mockup{
+  background: linear-gradient(90deg, rgba(244,163,58,1) 0%, rgba(228,92,228,1) 52%, rgba(9,25,121,1) 100%);
+  width: 100%;
+}
+
+.space{
+  display: flex;
+  justify-content: space-between;
+}
