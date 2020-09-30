@@ -126,7 +126,7 @@ main {
   display: flex;
   margin-top: 24%;
   margin-right: 20%;
-  margin-bottom: 160px;
+  margin-bottom: 200px;
 }
 
 .layout h1 {
@@ -169,7 +169,7 @@ footer {
 
 footer h1 {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 17%;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
@@ -211,4 +211,8 @@ footer h1 {
   margin-top: 15%;
   text-align: center;
   margin-bottom: 45px;
+}
+
+.call{
+  margin-top: 1%;
 }
