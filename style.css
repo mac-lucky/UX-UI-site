@@ -116,12 +116,12 @@ main {
 
 .layout {
   margin-right: 10.5%;
-  margin-left: 12%;
+  margin-left: 16%;
 }
 
 .aboutme img {
-  width: 270px;
-  height: 270px;
+  width: 290px;
+  height: 290px;
   float: left;
   display: flex;
   margin-top: 24%;
@@ -143,7 +143,6 @@ main {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   letter-spacing: 0.15px;
-  text-align: justify;
 }
 
 .layout p1 {
