@@ -44,6 +44,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   left: 10%;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .info {
@@ -54,12 +55,15 @@ nav {
 .name {
   margin-top: 180px;
   font-size: 100px;
+  color: rgba(0, 0, 0, 0.85);
+  ;
 }
 
 .undername {
   margin-top: 16px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 40px;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 p.logo {
@@ -109,7 +113,7 @@ main {
 
 .aboutme {
   height: 100vh;
-  background: linear-gradient(180deg, #e0c1e9 0%, rgba(222, 195, 195, 0) 100%);
+  background: linear-gradient(180deg, #AF6595 0%, rgba(222, 195, 195, 0) 100%);
   display: flex;
   width: 100%;
 }
@@ -124,9 +128,10 @@ main {
   height: 290px;
   float: left;
   display: flex;
-  margin-top: 24%;
+  margin-top: 34%;
   margin-right: 20%;
   margin-bottom: 200px;
+  margin-left: 50px;
 }
 
 .layout h1 {
@@ -137,30 +142,37 @@ main {
   text-align: center;
   margin-top: 20%;
   margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .layout p1 {
   display: flex;
   letter-spacing: 0.15px;
-  line-height: 27px;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .layout p2 {
   display: flex;
-  line-height: 27px;
+  line-height: 150%;
   letter-spacing: 0.15px;
   margin-bottom: 36px;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 .layout p3 {
   line-height: 27px;
   letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -169,7 +181,7 @@ footer {
 
 footer h1 {
   text-align: center;
-  margin-top: 17%;
+  margin-top: 7%;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
@@ -182,6 +194,7 @@ footer h1 {
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.15px;
+  
 }
 
 .contact {
@@ -194,13 +207,14 @@ footer h1 {
 }
 
 .contact img {
-  height: 100px;
+  height: 50px;
   width: auto;
 }
 
 .contact p {
   margin-top: 12px;
   font-family: "Source Sans Pro", sans-serif;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .bottomtext {
@@ -211,6 +225,7 @@ footer h1 {
   margin-top: 15%;
   text-align: center;
   margin-bottom: 45px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .call{
