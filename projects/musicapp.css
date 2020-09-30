@@ -275,6 +275,7 @@ header {
 }
 
 .userresearch h3 {
+  font-family: 'Source Sans Pro', sans-serif;
   margin-top: 20px;
   margin-bottom: 15px;
   font-size: 22px;
@@ -546,11 +547,11 @@ p {
   width: 65%;
 }
 
-.uikit>.width{
+.uikit>.width {
   justify-content: space-between;
 }
 
-.uikitleft{
+.uikitleft {
   width: 45%;
 }
 
@@ -611,12 +612,12 @@ p {
   margin-top: 4%;
 }
 
-.uikitright{
+.uikitright {
   width: 30%;
 }
 
 
-.uikitright img:nth-of-type(1n+2){
+.uikitright img:nth-of-type(1n+2) {
   width: 80%;
 }
 
@@ -651,18 +652,68 @@ p {
   margin-top: 5%;
 }
 
-.white{
-  height: 30vh;
+.white {
+  height: 15vh;
   background: white;
   width: 100%;
 }
 
-.mockup{
-  background: linear-gradient(90deg, rgba(244,163,58,1) 0%, rgba(228,92,228,1) 52%, rgba(9,25,121,1) 100%);
+.mockup {
+  background: linear-gradient(90deg, rgba(244, 163, 58, 1) 0%, rgba(228, 92, 228, 1) 52%, rgba(9, 25, 121, 1) 100%);
   width: 100%;
+  height: 460vh;
 }
 
-.space{
+.mockupwidth {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.mockup h1 {
+  padding-top: 4%;
+  color: rgba(26, 24, 24, 0.85);
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.1px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 1%;
+}
+
+.flex{
   display: flex;
   justify-content: space-between;
+}
+
+.mockup img {
+  width: 20%;
+}
+
+.firstrow img{
+  width: 27%;
+}
+
+.firstrow{
+  width: 73%;
+}
+
+.secondrow img{
+  width: 80px;
+}
+.secondrow{
+  width: 88%;
+  margin-left: 6%;
+  margin-bottom: 4%;
+}
+
+.mtop{
+  margin-top: 8%;
+}
+
+.seventhrow{
+  justify-content: flex-start;
+}
+
+.seventhrow img:nth-of-type(2){
+  margin-left: 6.5%;
 }
