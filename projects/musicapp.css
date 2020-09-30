@@ -748,15 +748,15 @@ p {
 }
 
 .more{
-  width: 40%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 25%;
   display: flex;
   justify-content: space-between;
   margin-top: 3%;
 }
 
 .more img{
-  width: 40%;
+  width: 100%;
 }
 
 .footertext{
