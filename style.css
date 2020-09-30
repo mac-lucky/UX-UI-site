@@ -126,7 +126,7 @@ main {
   display: flex;
   margin-top: 24%;
   margin-right: 20%;
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 }
 
 .layout h1 {
@@ -135,8 +135,8 @@ main {
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 70px;
+  margin-top: 20%;
+  margin-bottom: 50px;
 }
 
 .text {
