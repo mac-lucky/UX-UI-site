@@ -418,6 +418,42 @@ main {
   width: 33%;
 }
 
+/* main => more-inforamtio-arch */
+
+.more-information-arch {
+  width: 100%;
+  height: 7282px;
+  position: relative;
+}
+
+.more-information-arch .wave {
+  position: absolute;
+  height: inherit;
+  top: 0;
+  left: -15%;
+  width: inherit;
+}
+
+.more-information-arch .wave > svg {
+  width: inherit;
+  height: inherit;
+}
+
+.more-information-arch .wave > img {
+  position: absolute;
+  width: 6%;
+}
+
+.more-information-arch .wave #sms {
+  left: 21%;
+  top: 6%;
+}
+.more-information-arch .wave #smartphone {
+  left: 21%;
+  width: 10%;
+  top: 18%;
+}
+
 /* main => future */
 .future {
   width: 80%;
