@@ -388,7 +388,7 @@ main {
 }
 
 .flow-people .flow-person > img {
-  width: 100%;
+  size: 60%;
 }
 
 /* main => information-architecture */
