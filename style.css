@@ -19,20 +19,22 @@ header {
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
   display: flex;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 nav {
@@ -42,6 +44,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   left: 10%;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .info {
@@ -50,12 +53,17 @@ nav {
 }
 
 .name {
-  font-size: 75px;
+  margin-top: 180px;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.85);
+  ;
 }
 
 .undername {
-  font-family: Source Sans Pro;
-  font-size: 48px;
+  margin-top: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 p.logo {
@@ -75,7 +83,7 @@ nav ul li {
 nav ul li a {
   font-size: 18px;
   text-transform: uppercase;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   color: black;
 }
 
@@ -105,74 +113,92 @@ main {
 
 .aboutme {
   height: 100vh;
-  background: linear-gradient(180deg, #E0C1E9 0%, rgba(222, 195, 195, 0) 100%);
-  display: flex; 
+  background: linear-gradient(180deg, #AF6595 0%, rgba(222, 195, 195, 0) 100%);
+  display: flex;
   width: 100%;
 }
 
-.layout{
-  margin-right: 12%;
-  margin-left: 12%;
+.layout {
+  margin-right: 10.5%;
+  margin-left: 16%;
 }
-.aboutme img{
-  width: 325px;
-  height: 326px;
+
+.aboutme img {
+  width: 290px;
+  height: 290px;
   float: left;
   display: flex;
-  margin-top: 20%;
-  margin-right: 10%;
-  margin-bottom: 30px;
+  margin-top: 34%;
+  margin-right: 20%;
+  margin-bottom: 200px;
+  margin-left: 50px;
 }
 
 .layout h1 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display", serif;
   font-size: 50px;
   font-style: normal;
+  font-weight: normal;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 70px;
+  margin-top: 20%;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .text {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   letter-spacing: 0.15px;
-  text-align: justify;
+  color: rgba(0, 0, 0, 0.87);
 }
 
-.layout p1{
+.layout p1 {
   display: flex;
-  margin-bottom: 45px;
-}
-
-.layout p2{
-  display: flex;
+  letter-spacing: 0.15px;
   margin-bottom: 36px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-footer{
+.layout p2 {
+  display: flex;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  margin-bottom: 36px;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+.layout p3 {
+  line-height: 27px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
   height: 85vh;
 }
 
-footer h1{
+footer h1 {
   text-align: center;
-  margin-top: 10%;
-  font-family: Playfair Display;
+  margin-top: 7%;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
 }
 
-.contact h1{
-  font-family: Source Sans Pro;
+.contact h1 {
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.15px;
+  
 }
 
-.contact{
-  display: flex;  
+.contact {
+  display: flex;
   margin-left: 15%;
   width: 70%;
   justify-content: space-between;
@@ -180,22 +206,28 @@ footer h1{
   margin-top: 10%;
 }
 
-.contact img{
-  height: 100px;
+.contact img {
+  height: 50px;
   width: auto;
 }
 
-.contact p{
+.contact p {
   margin-top: 12px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(0, 0, 0, 0.65);
 }
 
-.bottomtext{
-  font-family: Source Sans Pro;
+.bottomtext {
+  font-family: " Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   margin-top: 15%;
   text-align: center;
   margin-bottom: 45px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.call{
+  margin-top: 1%;
 }
