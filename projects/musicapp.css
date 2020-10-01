@@ -177,10 +177,10 @@ header {
 }
 
 .competition {
-  /* margin-top: 20%; */
   width: 100%;
-  height: 100vh;
+  padding-top: 5rem;
   background: #F7F7F7;
+  padding-bottom: 5rem;
 }
 
 .competitionalign {
@@ -189,7 +189,6 @@ header {
 }
 
 .competition h1 {
-  padding-top: 5%;
   padding-bottom: 5%;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
@@ -244,7 +243,6 @@ header {
 
 .userresearch {
   width: 100%;
-  height: 90vh;
 }
 
 .userresearch h2 {
@@ -304,7 +302,6 @@ header {
 .personabg {
   background-color: #E8E8E8;
   border-radius: 6px;
-  /* height: 100vh; */
   padding-bottom: 3rem;
   margin-top: 10%;
 }
@@ -415,19 +412,16 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-top: 5rem;
-  /* margin-left: 10%;
-  margin-top: 10%; */
 }
 
 .proposed img {
   width: 20%;
-  /* max-height: 100%; */
-  /* height: 50%; */
 }
 
 .userflow {
   width: 100%;
-  height: 80vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background: #f6f6f6;
 }
 
@@ -446,35 +440,27 @@ p {
   margin-top: 3%;
 }
 
-.userflow h2 {
-  padding-top: 5%;
-}
-
 .information img {
   max-width: 100%;
-  margin-top: 4%;
+  margin-top: 2rem;
 }
 
 .information p {
-  margin-top: 3%;
-}
-
-.information h2 {
-  padding-top: 5%;
+  margin-top: 2rem;
 }
 
 .information {
-  height: 100vh;
+  padding-top: 5rem;
   width: 100%;
+  padding-bottom: 5rem;
 }
 
 .sketches h2 {
   margin-left: 10%;
-  padding-top: 4%;
 }
 
 .sketches {
-  height: 85vh;
+  padding-top: 5rem;
   width: 100%;
   background: #f6f6f6;
 }
@@ -485,16 +471,13 @@ p {
 
 .sketches p {
   margin-left: 15%;
-  margin-top: 10%;
-}
-
-.wireframes h2 {
-  padding-top: 4%;
+  margin-top: 4rem;
 }
 
 .wireframes {
   width: 100%;
-  height: 80vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .wireframes p {
@@ -508,8 +491,8 @@ p {
 }
 
 .uikit h1 {
+  padding-top: 5rem;
   margin-left: 10%;
-  padding-top: 4%;
   color: rgba(26, 24, 24, 0.85);
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.1px;
@@ -539,9 +522,7 @@ p {
 
 .uikit {
   background: #F7F7F7;
-  ;
   width: 100%;
-  height: 220vh;
 }
 
 .uikit img {
@@ -676,9 +657,10 @@ p {
 }
 
 .mockup {
+  padding-top: 5rem;
   background: linear-gradient(90deg, rgba(244, 163, 58, 1) 0%, rgba(228, 92, 228, 1) 52%, rgba(9, 25, 121, 1) 100%);
   width: 100%;
-  height: 460vh;
+  padding-bottom: 5rem;
 }
 
 .mockupwidth {
@@ -687,7 +669,6 @@ p {
 }
 
 .mockup h1 {
-  padding-top: 4%;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.1px;
   font-size: 48px;
@@ -737,8 +718,9 @@ p {
 }
 
 .vid {
-  height: 130vh;
+  padding-top: 20rem;
   width: 100%;
+  padding-bottom: 5rem;
 }
 
 .vid img {
@@ -749,7 +731,8 @@ p {
 
 .seemore {
   background-color: #F7F7F7;
-  height: 50vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   width: 100%;
 }
 
@@ -769,7 +752,7 @@ p {
   margin-left: 25%;
   display: flex;
   justify-content: space-between;
-  margin-top: 3%;
+
 }
 
 .more img {
@@ -777,11 +760,11 @@ p {
 }
 
 .footertext {
-  height: 15vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
 }
 
 .footertext p {
-  margin-top: 5%;
   font-size: 16px;
 }
