@@ -388,7 +388,7 @@ main {
 }
 
 .flow-people .flow-person > img {
-  size: 60%;
+  width: 100%;
 }
 
 /* main => information-architecture */
@@ -416,4 +416,111 @@ main {
   font-size: 1.3rem;
   padding: 2rem 0 3rem 0;
   width: 33%;
+}
+
+/* main => more-inforamtio-arch */
+
+.more-information-arch {
+  width: 100%;
+  height: 7282px;
+  position: relative;
+}
+
+.more-information-arch .wave {
+  position: absolute;
+  height: inherit;
+  top: 0;
+  left: -15%;
+  width: inherit;
+}
+
+.more-information-arch .wave > svg {
+  width: inherit;
+  height: inherit;
+}
+
+.more-information-arch .wave > img {
+  position: absolute;
+  width: 6%;
+}
+
+.more-information-arch .wave #sms {
+  left: 21%;
+  top: 6%;
+}
+.more-information-arch .wave #smartphone {
+  left: 21%;
+  width: 10%;
+  top: 18%;
+}
+
+/* main => future */
+.future {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.future .future-left {
+  padding: 3rem 0;
+  width: 45%;
+}
+
+.future .future-right {
+  width: 45%;
+  padding-top: 6rem;
+  text-align: right;
+}
+
+.future .future-right #senior-img {
+  width: 50%;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seemore {
+  background-color: #f7f7f7;
+  padding-bottom: 3rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.seemore h3 {
+  font-family: var(--pro);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 133.4%;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.more {
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.more img {
+  width: 100%;
+}
+
+.footertext {
+  height: 15vh;
+  text-align: center;
+}
+
+.footertext p {
+  margin-top: 5rem;
+  font-size: 16px;
 }
