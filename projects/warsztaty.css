@@ -55,7 +55,7 @@ header nav {
   height: 10vh;
 }
 
-header nav > p.logo {
+header nav>p.logo {
   color: black;
   font-size: 24px;
   line-height: 80px;
@@ -64,27 +64,27 @@ header nav > p.logo {
   font-family: var(--playfair);
 }
 
-header nav > ul {
+header nav>ul {
   display: flex;
 }
 
-nav > ul li {
+nav>ul li {
   line-height: 80px;
   margin: 0 1.2rem;
 }
 
-nav > ul li a {
+nav>ul li a {
   font-size: 18px;
   text-transform: uppercase;
   font-family: var(--pro);
   color: black;
 }
 
-nav > ul li a.active {
+nav>ul li a.active {
   font-weight: 700;
 }
 
-nav > ul li a:hover {
+nav>ul li a:hover {
   font-weight: 700;
 }
 
@@ -102,19 +102,19 @@ header .info .info-right {
   width: 50%;
 }
 
-header .info .info-left > p {
+header .info .info-left>p {
   font-size: 2.5rem;
   font-weight: 700;
   padding-bottom: 0.6rem;
   font-family: var(--pro);
 }
 
-header .info .info-left > span {
+header .info .info-left>span {
   padding-top: 2rem;
   font-family: var(--pro);
 }
 
-header .info .info-left > img {
+header .info .info-left>img {
   width: 90%;
   display: block;
   margin-top: 2rem;
@@ -125,7 +125,8 @@ header .info .info-right {
   align-items: center;
   justify-content: center;
 }
-header .info .info-right > img {
+
+header .info .info-right>img {
   width: 60%;
   padding-top: 7rem;
 }
@@ -134,6 +135,7 @@ header .info .info-right > img {
 main {
   width: 100%;
 }
+
 /* main section => overview */
 
 .background-bg {
@@ -168,6 +170,7 @@ main {
   margin: auto;
   padding: 3rem 0;
 }
+
 .design-process .top,
 .design-process .bottom {
   display: flex;
@@ -184,8 +187,9 @@ main {
   justify-content: center;
   display: flex;
 }
-.design-process .top-img > img,
-.design-process .bottom > img {
+
+.design-process .top-img>img,
+.design-process .bottom>img {
   width: 100%;
 }
 
@@ -193,7 +197,7 @@ main {
   flex-direction: column;
 }
 
-.design-process .bottom > span {
+.design-process .bottom>span {
   padding-bottom: 2rem;
 }
 
@@ -216,7 +220,7 @@ main {
   padding-top: 6rem;
 }
 
-.research .research-right > span {
+.research .research-right>span {
   padding-bottom: 2rem;
 }
 
@@ -224,10 +228,11 @@ main {
   width: 100%;
 }
 
-.research .research-right > span:nth-child(5) {
+.research .research-right>span:nth-child(5) {
   text-align: right;
 }
-.research .research-right .section-desc > a {
+
+.research .research-right .section-desc>a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.65);
 }
@@ -266,7 +271,7 @@ main {
   margin-left: 2rem;
 }
 
-.persons .persons-right .person > img {
+.persons .persons-right .person>img {
   width: 60%;
 }
 
@@ -326,7 +331,8 @@ main {
   padding: 6rem 0 0.5rem 0;
   color: #0091ea;
 }
-.helper .helper-rightDesc > img {
+
+.helper .helper-rightDesc>img {
   width: 50%;
 }
 
@@ -364,7 +370,7 @@ main {
   font-family: var(--pro);
 }
 
-.helper .helper-wave .helper-info > img {
+.helper .helper-wave .helper-info>img {
   width: 15%;
 }
 
@@ -387,7 +393,7 @@ main {
   font-family: var(--pro);
 }
 
-.flow-people .flow-person > img {
+.flow-people .flow-person>img {
   width: 100%;
 }
 
@@ -418,6 +424,10 @@ main {
   width: 33%;
 }
 
+.information-architecture>img {
+  max-width: 100%;
+}
+
 /* main => more-inforamtio-arch */
 
 .more-information-arch {
@@ -437,12 +447,12 @@ main {
   width: inherit;
 }
 
-.more-information-arch .wave > svg {
+.more-information-arch .wave>svg {
   width: inherit;
   height: inherit;
 }
 
-.more-information-arch .wave > img {
+.more-information-arch .wave>img {
   position: absolute;
   width: 6%;
 }
@@ -451,10 +461,11 @@ main {
   left: 21%;
   top: 6%;
 }
+
 .more-information-arch .wave #smartphone {
   left: 21%;
   width: 10%;
-  top: 20%;
+  top: 17.5%;
 }
 
 .more-information-arch .messages {
@@ -468,19 +479,60 @@ main {
 
 .more-information-arch .messages img {
   padding: 1rem 2.5rem;
+  max-width: 100%;
 }
 
-.more-information-arch .messages > div {
+.more-information-arch .messages>div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* width: 50%; */
   height: 100%;
 }
 
+/* main => more-inforamtio-arch => flow-senior  */
 .flow-senior {
   width: 80%;
   margin: 0 auto;
   z-index: 2;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.flow-senior .flow-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: var(--pro);
+}
+
+/* main => {...} => cards */
+.flow-senior .cards {
+  padding-top: 10rem;
+  width: 95%;
+}
+
+.flow-senior .cards .card {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: auto;
+}
+
+.flow-senior .cards .card .card-left {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--pro);
+  width: 50%;
+}
+
+.flow-senior .cards .card .card-right {
+  width: 50%;
+}
+
+.flow-senior .cards .card .card-right img {
+  max-width: 100%;
 }
 
 /* main => future */
