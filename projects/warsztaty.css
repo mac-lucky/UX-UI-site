@@ -469,11 +469,18 @@ main {
 .more-information-arch .messages img {
   padding: 1rem 2.5rem;
 }
+
 .more-information-arch .messages > div {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
+}
+
+.flow-senior {
+  width: 80%;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 /* main => future */
