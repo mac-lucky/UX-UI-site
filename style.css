@@ -128,7 +128,7 @@ main {
   height: 290px;
   float: left;
   display: flex;
-  margin-top: 34%;
+  margin-top: 31%;
   margin-right: 20%;
   margin-bottom: 15rem;
   margin-left: 50px;
@@ -176,7 +176,7 @@ main {
 }
 
 footer {
-  padding-top: 30rem;
+  padding-top: 10rem;
 }
 
 footer h1 {
@@ -202,7 +202,7 @@ footer h1 {
   width: 70%;
   justify-content: space-between;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
 }
 
@@ -222,7 +222,7 @@ footer h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  padding-top: 5rem;
+  padding-top: 12rem;
   text-align: center;
   padding-bottom: 5rem;
   color: rgba(0, 0, 0, 0.4);
