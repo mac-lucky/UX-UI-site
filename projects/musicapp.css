@@ -39,13 +39,8 @@ nav ul li {
 nav ul li a {
   font-size: 18px;
   text-transform: uppercase;
-<<<<<<< HEAD
-  font-family: 'Source Sans Pro', sans-serif;
-  color: black;
-=======
   font-family: Source Sans Pro;
   color: rgba(0, 0, 0, 0.85);;
->>>>>>> 520fc6fec633ecc3b7639fa055903846f0ed968d
 }
 
 nav {
