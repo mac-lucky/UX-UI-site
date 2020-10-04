@@ -490,15 +490,14 @@ p {
 }
 
 .uikit h1 {
-  padding-top: 5rem;
-  margin-left: 10%;
-  color: rgba(26, 24, 24, 0.85);
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.1px;
   font-size: 48px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   color: rgba(26, 24, 24, 0.85);
+  margin-left: 10%;
+  padding-top: 5rem;
 }
 
 .uikit h3 {
@@ -664,14 +663,7 @@ color: rgba(26, 24, 24, 0.85);
   max-width: 100%;
 }
 
-.mockup h1 {
-
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 0.1px;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: normal;
-  color: #AB75B1;
+.mockup h2 {
   margin-left: 10%;
 }
 
@@ -768,14 +760,19 @@ color: rgba(26, 24, 24, 0.85);
   margin-left: 15%;
 }
 
-.movies p{
+.movies p:nth-of-type(1){
   color: rgba(0, 0, 0, 0.75);
-  padding-top: 3rem;
+  padding-top: 2rem;
+}
+
+.movies p:nth-of-type(2){
+  color: rgba(0, 0, 0, 0.75);
+  padding-top: 1rem;
 }
 
 .first{
   display: flex;
-  width: 80%;
+  width: 70%;
   padding-top: 5rem;
 }
 
@@ -788,9 +785,10 @@ color: rgba(26, 24, 24, 0.85);
 }
 
 .second{
+  float: right;
   display: flex;
   padding-top: 5rem;
-  width: 80%;
+  width: 70%;
   margin-left: 20%;
 }
 
