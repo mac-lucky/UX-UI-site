@@ -37,7 +37,7 @@ nav ul li {
 nav ul li a {
   font-size: 18px;
   text-transform: uppercase;
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   color: black;
 }
 
@@ -148,13 +148,10 @@ header {
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
-  /* padding-left: 10%; */
-  /* height: 40vh; */
 }
 
 .uxuiprocess img {
   max-width: 100%;
-  /* height: auto; */
 }
 
 .uxuiprocess img:nth-child(2) {
@@ -259,7 +256,7 @@ header {
 }
 
 .width {
-  padding: 5rem 0;
+  padding: 5rem;
   width: 80%;
   display: flex;
   margin-left: 10%;
@@ -420,8 +417,8 @@ p {
 
 .userflow {
   width: 100%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: #f6f6f6;
 }
 

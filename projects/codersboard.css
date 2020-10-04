@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 18px;
+    line-height: 133.4%;
+    letter-spacing: 0.1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+html,
+body {
+    width: 100%;
+}
+
+p.logo {
+    color: black;
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+
+nav {
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 10%;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.coderslandpage {
+    left: 10%;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.coderspreviewimg {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.coderslandpage h1 {
+    padding-top: 7rem;
+    align-items: center;
+}
+
+.coderslandpage p {
+    padding-top: 3rem;
+}
+
+
+.widthnf {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    left: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+.width {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    left: 10%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.under {
+    background-color: #F7F7F7;
+}
+
+.under img {
+    max-width: 100%;
+}
+
+.underright {
+    justify-content: center;
+    vertical-align: middle;
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.right {
+    justify-content: center;
+    vertical-align: middle;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.left {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.overview p {
+    padding-top: 2rem;
+}
+
+.timeline {
+    background: #F7F7F7;
+    ;
+}
+
+.timeline img {
+    max-width: 100%;
+    padding-top: 3rem;
+}
+
+.timeline p {
+    padding-top: 1rem;
+}
+
+.research img {
+    max-width: 100%;
+}
+
+.research p:nth-of-type(1) {
+    padding-top: 2rem;
+}
+
+.research p:nth-of-type(2) {
+    font-weight: 600;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.personas{
+    background: #F7F7F7;
+}
+
+.personaspace {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona img{
+   width: 50%;
+}
+
+.personas p{
+    padding-top: 1rem;
+}
+
