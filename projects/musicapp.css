@@ -657,25 +657,23 @@ p {
 }
 
 .mockup {
-  padding-top: 5rem;
-  background: linear-gradient(90deg, rgba(244, 163, 58, 1) 0%, rgba(228, 92, 228, 1) 52%, rgba(9, 25, 121, 1) 100%);
   width: 100%;
   padding-bottom: 5rem;
 }
 
-.mockupwidth {
-  width: 70%;
-  margin-left: 15%;
+.mockup img{
+  max-width: 100%;
 }
 
 .mockup h1 {
+
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.1px;
   font-size: 48px;
   font-style: normal;
   font-weight: normal;
-  margin-left: 1%;
-  color: rgba(26, 24, 24, 0.85);
+  color: #AB75B1;
+  margin-left: 10%;
 }
 
 .flex {
@@ -683,50 +681,21 @@ p {
   justify-content: space-between;
 }
 
-.mockup img {
-  width: 20%;
-}
-
-.firstrow img {
-  width: 27%;
-}
-
-.firstrow {
-  width: 73%;
-}
-
-.secondrow img {
-  width: 80px;
-}
-
-.secondrow {
-  width: 88%;
-  margin-left: 6%;
-  margin-bottom: 4%;
-}
-
-.mtop {
-  margin-top: 8%;
-}
-
-.seventhrow {
-  justify-content: flex-start;
-}
-
-.seventhrow img:nth-of-type(2) {
-  margin-left: 6.5%;
-}
-
 .vid {
-  padding-top: 20rem;
+  padding-top: 5rem;
   width: 100%;
   padding-bottom: 5rem;
 }
 
-.vid img {
+.vid img:nth-of-type(1){
   width: 40%;
   margin-left: 30%;
-  margin-top: 5%;
+}
+
+.vid img:nth-of-type(2){
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3rem;
 }
 
 .seemore {
@@ -767,4 +736,70 @@ p {
 
 .footertext p {
   font-size: 16px;
+}
+
+.movies{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(90deg, rgba(244,163,58,1) 0%, rgba(228,92,228,1) 52%, rgba(9,25,121,1) 100%);
+}
+
+.movies h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.1px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  margin-left: 10%;
+}
+
+.movies h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.1px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  padding-top: 3rem;
+}
+
+.movieswidth {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.movies p{
+  color: white;
+  padding-top: 3rem;
+}
+
+.first{
+  display: flex;
+  width: 80%;
+  padding-top: 5rem;
+}
+
+.movieunpar img{
+  width: 300px;
+}
+
+.textunpar{
+  padding-left: 5rem;
+}
+
+.second{
+  display: flex;
+  padding-top: 5rem;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.textpar{
+  padding-right: 5rem;
+  text-align: right;
+}
+
+.moviepar img{
+  width: 300px;
 }
