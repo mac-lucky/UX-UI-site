@@ -138,7 +138,7 @@ main {
 
 .background-bg {
   width: inherit;
-  background: var(--bg);
+  background: #F6F6F6;
 }
 
 .overview {
