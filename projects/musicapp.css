@@ -257,7 +257,8 @@ header {
 }
 
 .width {
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   width: 80%;
   display: flex;
   margin-left: 10%;
@@ -703,7 +704,6 @@ color: rgba(26, 24, 24, 0.85);
   line-height: 133.4%;
   letter-spacing: 0.1px;
   text-align: center;
-  padding-top: 3%;
 }
 
 .more {
@@ -731,7 +731,6 @@ color: rgba(26, 24, 24, 0.85);
 .movies{
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: white
 }
 
 .movies h1 {
