@@ -39,7 +39,8 @@ nav ul li a {
   font-size: 18px;
   text-transform: uppercase;
   font-family: Source Sans Pro;
-  color: rgba(0, 0, 0, 0.85);;
+  color: rgba(0, 0, 0, 0.85);
+  ;
 }
 
 nav {
@@ -503,7 +504,7 @@ p {
 .uikit h3 {
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.1px;
-color: rgba(26, 24, 24, 0.85);
+  color: rgba(26, 24, 24, 0.85);
   font-size: 24px;
   font-style: normal;
   font-weight: normal;
@@ -659,7 +660,7 @@ color: rgba(26, 24, 24, 0.85);
   padding-bottom: 5rem;
 }
 
-.mockup img{
+.mockup img {
   max-width: 100%;
 }
 
@@ -678,12 +679,12 @@ color: rgba(26, 24, 24, 0.85);
   padding-bottom: 5rem;
 }
 
-.vid img:nth-of-type(1){
+.vid img:nth-of-type(1) {
   width: 40%;
   margin-left: 30%;
 }
 
-.vid img:nth-of-type(2){
+.vid img:nth-of-type(2) {
   width: 40%;
   margin-left: 30%;
   margin-top: 3rem;
@@ -728,7 +729,7 @@ color: rgba(26, 24, 24, 0.85);
   font-size: 16px;
 }
 
-.movies{
+.movies {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -758,31 +759,31 @@ color: rgba(26, 24, 24, 0.85);
   margin-left: 15%;
 }
 
-.movies p:nth-of-type(1){
+.movies p:nth-of-type(1) {
   color: rgba(0, 0, 0, 0.75);
   padding-top: 2rem;
 }
 
-.movies p:nth-of-type(2){
+.movies p:nth-of-type(2) {
   color: rgba(0, 0, 0, 0.75);
   padding-top: 1rem;
 }
 
-.first{
+.first {
   display: flex;
   width: 70%;
   padding-top: 5rem;
 }
 
-.movieunpar img{
+.movieunpar img {
   width: 320px;
 }
 
-.textunpar{
+.textunpar {
   padding-left: 5rem;
 }
 
-.second{
+.second {
   float: right;
   display: flex;
   padding-top: 5rem;
@@ -790,11 +791,15 @@ color: rgba(26, 24, 24, 0.85);
   margin-left: 20%;
 }
 
-.textpar{
+.clear {
+  clear: both;
+}
+
+.textpar {
   padding-right: 5rem;
   text-align: right;
 }
 
-.moviepar img{
+.moviepar img {
   width: 300px;
 }
