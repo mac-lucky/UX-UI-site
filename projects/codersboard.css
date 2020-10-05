@@ -84,7 +84,13 @@ header {
 }
 
 .coderslandpage p {
-    padding-top: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    align-items: center;
+    letter-spacing: 0.1px;
+    margin-top: 1rem;
 }
 
 
@@ -105,7 +111,7 @@ header {
     display: flex;
 }
 
-.widthnp{
+.widthnp {
     padding-bottom: 5rem;
     left: 10%;
     width: 80%;
@@ -116,6 +122,10 @@ header {
 
 .under {
     background-color: #F7F7F7;
+}
+
+.under img{
+    max-width: 100%;
 }
 
 .underright {
@@ -206,152 +216,150 @@ header {
     padding-top: 1.5rem;
 }
 
-.journey{
+.journey {
     background: #F7F7F7;
 }
 
-.journey img{
+.journey img {
     padding-top: 2rem;
 }
 
-.journeyleft{
+.journeyleft {
     width: 40%;
 }
 
-.journeyright{
+.journeyright {
     width: 55%;
     float: right;
     margin-left: 5%;
 }
 
-.mw{
+.mw {
     max-width: 100%;
 }
 
-.journey p:nth-of-type(1){
+.journey p:nth-of-type(1) {
     padding-top: 2rem;
 }
 
-.journey p:nth-of-type(2){
+.journey p:nth-of-type(2) {
     padding-top: 3rem;
     font-weight: 600;
 }
 
-.journey p:nth-of-type(3){
+.journey p:nth-of-type(3) {
     padding-top: 1rem;
 }
 
-.userflows img{
+.userflows img {
     padding-top: 1rem;
 }
 
-.userflows p:nth-of-type(1){
+.userflows p:nth-of-type(1) {
     padding-top: 1rem;
 }
 
-.userflows p:nth-of-type(2){
+.userflows p:nth-of-type(2) {
     padding-top: 4rem;
     font-weight: 600;
 }
 
-.userflows p:nth-of-type(3){
+.userflows p:nth-of-type(3) {
     padding-top: 1rem;
 }
 
-.arch h1{
+.arch h1 {
     margin-left: 10%;
     padding-top: 5rem;
 }
 
-.arch{
+.arch {
     background: #F7F7F7;
 }
 
-.arch img{
+.arch img {
     padding-top: 1rem;
 }
 
-.arch p:nth-of-type(1){
+.arch p:nth-of-type(1) {
     padding-top: 1rem;
 }
 
-.arch p:nth-of-type(2){
+.arch p:nth-of-type(2) {
     padding-top: 3rem;
     font-weight: 600;
 }
 
-.arch p:nth-of-type(3){
+.arch p:nth-of-type(3) {
     padding-top: 1rem;
 }
 
-.arch p:nth-of-type(4){
+.arch p:nth-of-type(4) {
     padding-top: 2rem;
 }
 
-.archleft{
+.archleft {
     width: 40%;
 }
 
-.archright{
+.archright {
     width: 40%;
     float: right;
 }
 
-.design p:nth-of-type(1){
+.design p:nth-of-type(1) {
     padding-top: 1rem;
     float: left;
     margin-right: 55%;
 }
 
 
-.design p:nth-of-type(2){
+.design p:nth-of-type(2) {
     padding-top: 1rem;
     float: right;
-    margin-left:  55%;
+    margin-left: 55%;
     padding-bottom: 1rem;
 }
 
 
-.design p:nth-of-type(3){
+.design p:nth-of-type(3) {
     padding-top: 1rem;
     float: right;
 }
 
-.guide{
+.guide {
     background: #F7F7F7;
 }
 
-.guide p{
+.guide p {
     padding-top: 2rem;
     margin-right: 55%;
 }
 
-.guide img{
+.guide img {
     padding-top: 2rem;
 }
 
-.imgflex{
+.imgflex {
     display: flex;
     width: 100%;
     padding-top: 1.5rem;
 }
 
-.sketch img{
+.sketch img {
     width: 25%;
 }
 
-.sketch p{
+.sketch p {
     padding-top: 1rem;
     margin-right: 55%;
 }
 
-.usability{
+.usability {
     background: #F7F7F7;
 }
 
-.usability p{
+.usability p {
     padding-top: 2rem;
     margin-right: 50%;
 }
-
-
