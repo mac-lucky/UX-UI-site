@@ -496,7 +496,7 @@ p {
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  color: rgba(26, 24, 24, 0.85);
+  color: #AB75B1;
   margin-left: 10%;
   padding-top: 5rem;
 }
@@ -680,13 +680,13 @@ p {
 }
 
 .vid img:nth-of-type(1) {
-  width: 40%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .vid img:nth-of-type(2) {
-  width: 40%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 25%;
   margin-top: 3rem;
 }
 
@@ -700,7 +700,7 @@ p {
 .seemore h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 20px;
   line-height: 133.4%;
   letter-spacing: 0.1px;
@@ -712,6 +712,7 @@ p {
   margin-left: 25%;
   display: flex;
   justify-content: space-between;
+  padding-top: 4rem;
 
 }
 
