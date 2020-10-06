@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p.logo {
   font-family: "Playfair Display", serif;
   color: rgba(0, 0, 0, 0.85);

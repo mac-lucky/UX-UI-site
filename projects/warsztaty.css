@@ -10,6 +10,10 @@
   --roboto: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* global styles */
 .section-title {
   font-family: var(--pro), sans-serif;
@@ -605,7 +609,7 @@ footer {
 }
 
 .seemore {
-  background-color: #fF6F6F6;
+  background-color: #F6F6F6;
   padding-bottom: 3rem;
   width: 100%;
   margin-top: 5rem;
