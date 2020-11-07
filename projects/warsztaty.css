@@ -561,10 +561,10 @@ main {
   width: 30%;
 }
 
-.flow-senior-volunteer .cards .card .card-right video {
-  max-width: 100%;
-  /* max-height: 100%; */
-  border-radius: 4.3rem;
+.flow-senior-volunteer .cards .card  video {
+  width: 320px;
+  /* max-width: 100%; */
+  border-radius: 4rem;
   outline: 0;
 }
 
