@@ -14,6 +14,9 @@ html {
   scroll-behavior: smooth;
 }
 
+p{
+  color: rgba(0, 0, 0, 0.85);
+}
 /* global styles */
 .section-title {
   font-family: var(--pro), sans-serif;
@@ -61,7 +64,6 @@ header nav {
 }
 
 header nav > p.logo {
-  color: black;
   font-size: 24px;
   line-height: 80px;
   font-weight: bold;
@@ -82,7 +84,7 @@ nav > ul li a {
   font-size: 18px;
   text-transform: uppercase;
   font-family: var(--pro);
-  color: black;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 nav > ul li a.active {
