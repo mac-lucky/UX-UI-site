@@ -105,7 +105,7 @@ main {
   flex-wrap: wrap;
 }
 
-.project{
+.project {
   position: relative;
 }
 
@@ -133,7 +133,7 @@ main {
   opacity: 1;
 }
 
-.project:hover img{
+.project:hover img {
   transition: .5s ease;
   opacity: 0.4;
 }
@@ -147,7 +147,8 @@ main {
   letter-spacing: 0.1px;
   color: rgba(26, 24, 24, 0.87);
 }
-.notitle{
+
+.notitle {
   padding-top: 7rem;
 }
 
@@ -172,26 +173,34 @@ main {
 }
 
 .aboutme {
-  height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: linear-gradient(180deg, #AF6595 0%, rgba(222, 195, 195, 0) 100%);
-  display: flex;
-  width: 100%;
 }
 
 .layout {
-  margin-right: 10.5%;
-  margin-left: 16%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: auto;
 }
 
-.aboutme img {
+.imageabout img {
   width: 290px;
   height: 290px;
-  float: left;
-  display: flex;
-  margin-top: 31%;
-  margin-right: 20%;
-  margin-bottom: 15rem;
-  margin-left: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.imageabout {
+  position: relative;
+  padding-right: 13rem;
+  padding-left: 7rem;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .layout h1 {
@@ -200,7 +209,6 @@ main {
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  padding-top: 12rem;
   margin-bottom: 50px;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -229,6 +237,7 @@ main {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
+
 .layout p3 {
   line-height: 27px;
   letter-spacing: 0.15px;
@@ -288,3 +297,49 @@ footer h1 {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.resume {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  padding-top: 5rem;
+  justify-content: space-between;
+  background-color:transparent;
+}
+
+
+.resume button {
+  color: #AF6595;
+  border: 3px solid #AF6595;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(30deg, transparent 50%, #AF6595 50%);
+  background: -linear-gradient(30deg, transparent 50%, #AF6595 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  width: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.resume button:hover {
+  background-position: 100%;
+  color: white;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
