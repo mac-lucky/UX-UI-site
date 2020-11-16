@@ -327,8 +327,8 @@ footer h1 {
   cursor: pointer;
   letter-spacing: 0.46px;
   text-transform: uppercase;
-  font-family: Roboto;
-  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
   font-weight: 500;
   font-size: 15px;
 }
@@ -338,8 +338,8 @@ footer h1 {
   color: white;
   letter-spacing: 0.46px;
   text-transform: uppercase;
-  font-family: Roboto;
-  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
   font-weight: 500;
   font-size: 15px;
 }
