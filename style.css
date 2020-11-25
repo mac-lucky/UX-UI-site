@@ -244,6 +244,15 @@ main {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.layout p4 {
+  line-height: 150%;
+  margin-top: 36px;
+  letter-spacing: 0.15px;
+  margin-bottom: 36px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 footer {
   padding-top: 20rem;
 }
