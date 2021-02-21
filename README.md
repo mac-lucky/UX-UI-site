@@ -4,6 +4,7 @@ Freelance project for a client based on mockups made in Figma. Requested to be a
 
 Entire project was made using HTML and CSS only.
 
-Demo version available here:
+Live version available here:
 
-[DEMO](https://www.wsawicka.com)
+<p align="center"><a href="https://www.wsawicka.com">LIVE SITE</a></p>
+
