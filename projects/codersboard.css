@@ -102,7 +102,6 @@ header {
 .widthnf {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    left: 10%;
     width: 80%;
     margin: auto;
 }
@@ -314,7 +313,6 @@ header {
 
 .design p:nth-of-type(1) {
     padding-top: 1rem;
-    float: left;
     margin-right: 55%;
 }
 
