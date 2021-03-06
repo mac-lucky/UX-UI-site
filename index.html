@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Portfolio Wiktoria Sawicka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/png" href="/images/LOGO.png" />
     <link
@@ -78,16 +80,16 @@
       </section>
       <section class="aboutme" id="ABOUT">
         <div class="layout">
-          <div class="aboutImage"><img src="images/me.png" alt="Me" /></div>
+          <div data-aos="fade-right" class="aboutImage"><img src="images/me.png" alt="Me" /></div>
           <div class="text">
-            <h1>It’s nice to meet you!</h1>
-            <p>
+            <h1 data-aos="fade-up">It’s nice to meet you!</h1>
+            <p data-aos="fade-up">
               Until January I’m a student of Architecture at Wrocław University
               of Science and Technology. In 3.5 years I have learned a lot about
               architecture design, but also about designing in general, because
               as Don Norman wrote in “Design of everyday things”:
             </p>
-            <div class="quote">
+            <div class="quote" data-aos="fade-up">
               <!-- <img src="/images/quotation 1.png"> -->
               <p>
                 “(...) the fundamental principles of designing for people are
@@ -96,7 +98,7 @@
               </p>
               <!-- <img src="/images/quotation 2.png"> -->
             </div>
-            <p>
+            <p data-aos="fade-up">
               From technical University I’ve learnt
               <b>analytical and logical thinking</b> which is important in UX
               profession.<br />
@@ -111,7 +113,7 @@
               and many, many more. I'm a constant learner, there is so much
               amazing staff to learn!
             </p>
-            <p>
+            <p data-aos="fade-up">
               <br />
               <b
                 >I would love to start my internship as a UX/UI Designer and
@@ -119,7 +121,7 @@
               >
             </p>
 
-            <div class="resume">
+            <div data-aos="fade-up" class="resume">
               <a href="/projects/CV_Wiktoria_Sawicka_ENG.pdf" target="blank"
                 ><button>RESUME ENG</button></a
               >
@@ -132,33 +134,33 @@
       </section>
     </main>
     <footer id="CONTACT">
-      <h1>I'd love to hear from you<br />Get in touch!</h1>
+      <h1 data-aos="fade-down">I'd love to hear from you<br />Get in touch!</h1>
       <section class="contact">
-        <div class="adres">
+        <div data-aos="zoom-in" class="adres">
           <img src="/images/icons/loc.png" />
           <h1>Adress</h1>
           <p>Wrocław, Poland</p>
         </div>
 
-        <div class="email">
+        <div data-aos="zoom-in" data-aos-delay="150" class="email">
           <img src="/images/icons/email.png" />
           <h1>Email me</h1>
           <p>wsawicka9855@gmail.com</p>
         </div>
 
-        <div class="call">
+        <div data-aos="zoom-in" data-aos-delay="300" class="call">
           <img src="/images/icons/text.png" />
           <h1>Text me</h1>
           <p>+48 732 443 201</p>
         </div>
 
-        <div class="linkedin">
+        <div data-aos="zoom-in" data-aos-delay="450" class="linkedin">
           <img src="/images/icons/lin.png" />
           <h1>Check me on Linkedin</h1>
           <p>https://bit.ly/2CJwmMr</p>
         </div>
       </section>
-      <div class="bottomtext">
+      <div data-aos="fade-up" class="bottomtext">
         <p>© 2020 Wiktoria Sawicka Designer/Projects</p>
       </div>
     </footer>
@@ -166,3 +168,7 @@
 </html>
 
 <script src="./app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

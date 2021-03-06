@@ -305,7 +305,7 @@ footer h1 {
 .resume {
   display: flex;
   margin: auto;
-  width: 80%;
+  width: 60%;
   padding-top: 5rem;
   justify-content: space-between;
   background-color: transparent;
