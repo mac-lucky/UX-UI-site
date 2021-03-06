@@ -1,144 +1,168 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="icon" type="image/png" href="/LOGO.png" />
+    <link rel="icon" type="image/png" href="https://example.com/LOGO.png" />
 
-<head>
-
-    <link rel="icon" type="image/png" href="/LOGO.png"/>
-    <link rel="icon" type="image/png" href="https://example.com/LOGO.png"/>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Portfolio Wiktoria Sawicka</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="/images/LOGO.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="/images/LOGO.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    
-</head>
-
-<body>
+  <body>
     <header id="HOME">
-        <nav>
-            <p class='logo'>Wiktoria Sawicka</p>
-            <ul>
-                <li><a href="#HOME">HOME</a></li>
-                <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
-                <li><a href="#ABOUT">ABOUT</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
-            </ul>
-        </nav>
-        <section class="info">
-            <p class='name'>Hi, I’m Wiktoria,</p>
-            <p class="undername">I’m a designer</p>
-        </section>
+      <nav>
+        <div class="navHeader">
+          <p class="logo">Wiktoria Sawicka</p>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-2x"></i>
+          </a>
+        </div>
+        <ul class="mobile" id="mobile">
+          <li><a id="saber" href="#HOME">HOME</a></li>
+          <li><a id="saber" href="#PORTFOLIO">PORTFOLIO</a></li>
+          <li><a id="saber" href="#ABOUT">ABOUT</a></li>
+          <li><a id="saber" href="#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+      <section class="info">
+        <p class="name">Hi, I’m Wiktoria,</p>
+        <p class="undername">I’m a designer</p>
+      </section>
     </header>
     <main>
-        <section class="projects" id="PORTFOLIO">
-            <div class="project">
-                <a href="/projects/instudy.html"><img class="image" src="images/background.png"></a>
+      <section class="projects" id="PORTFOLIO">
+        <div class="project">
+          <a href="/projects/instudy.html"
+            ><img class="image" src="images/background.png"
+          /></a>
+        </div>
+        <div class="project">
+          <a href="/projects/codersboard.html"
+            ><img class="image" src="images/codersboard.png"
+          /></a>
+          <div class="middle notitle">
+            <p>Website for managing the organization</p>
+          </div>
+        </div>
+        <div class="project">
+          <a href="/projects/musicapp.html"
+            ><img class="image" src="images/music.png"
+          /></a>
+          <div class="middle">
+            <h1>Play your mood</h1>
+            <p>Music Player App UI Project</p>
+          </div>
+        </div>
+        <div class="project">
+          <a href="/projects/warsztaty.html"
+            ><img class="image" src="images/pomocnik.png"
+          /></a>
+          <div class="middle">
+            <h1>POMOCNIK</h1>
+            <p>System of services for elderly people</p>
+          </div>
+        </div>
+      </section>
+      <section class="aboutme" id="ABOUT">
+        <div class="layout">
+          <div class="aboutImage"><img src="images/me.png" alt="Me" /></div>
+          <div class="text">
+            <h1>It’s nice to meet you!</h1>
+            <p>
+              Until January I’m a student of Architecture at Wrocław University
+              of Science and Technology. In 3.5 years I have learned a lot about
+              architecture design, but also about designing in general, because
+              as Don Norman wrote in “Design of everyday things”:
+            </p>
+            <div class="quote">
+              <!-- <img src="/images/quotation 1.png"> -->
+              <p>
+                “(...) the fundamental principles of designing for people are
+                the same across all domains. People are the same, and so the
+                design principles are the same.(...)”
+              </p>
+              <!-- <img src="/images/quotation 2.png"> -->
             </div>
-            <div class="project">
-                <a href="/projects/codersboard.html"><img class="image" src="images/codersboard.png"></a> 
-                <div class="middle notitle">
-                    <p>Website for managing the organization</p>
-                </div>       
-            </div>
-            <div class="project">
-                <a href="/projects/musicapp.html"><img class="image" src="images/music.png"></a>
-                <div class="middle">
-                    <h1>Play your mood</h1>
-                    <p>Music Player App UI Project</p>
-                </div>
-            </div>
-            <div class="project">
-                <a href="/projects/warsztaty.html"><img class="image" src="images/pomocnik.png"></a>
-                <div class="middle">
-                    <h1>POMOCNIK</h1>
-                    <p>System of services for elderly people</p>
-                </div>
-            </div>
-        </section>
-        <section class="aboutme" id="ABOUT">
-            <div class="layout">
-                <div class="imageabout"><img src="images/me.png" alt="Me"></div>
-                <div class="text">
-                    <h1>It’s nice to meet you!</h1>
-                    <p1>
-                        Until January I’m a student of Architecture at Wrocław University of Science and Technology.
-                        In 3.5 years I have learned a lot about architecture design, but also about designing in general, 
-                        because as Don Norman wrote in “Design of everyday things”:
-                    </p1>
-                    <div class="quote">
-                    <!-- <img src="/images/quotation 1.png"> -->
-                    <p2>
-                        “(...) the fundamental principles of designing for people are the same across all domains.
-                        People are the same, and so the design principles are the same.(...)”
-                    </p2>
-                    <!-- <img src="/images/quotation 2.png"> -->
-                    </div>
-                    <p3>
-                        From technical University I’ve learnt <b>analytical and logical thinking</b> which is important
-                        in UX profession.<br>
-                        Since December 2019 I’ve been a member of <b>CodersCrew</b>: non-profit organization operating
-                        in Wrocław,
-                        where I’m a part of UX/UI Design team. Now with my team we’re working on the whole programme of
-                        populization
-                        non- profit organizations in Poland, which also includes making a website. I’m interested in
-                        design as a process
-                        of solving problems, which could make a change in a human (not only) life as in the whole world.<br>
-                        I’m really into
-                        architecture, fantasy literature, <b>cats</b>, art and many, many more. I'm a constant learner,
-                        there is so much amazing
-                        staff to learn!
-                    </p3>
-                    <p4>
-                        <br>
-                        <b>I would love to start my internship as a UX/UI Designer and gain experience.</b>
-                    </p4>
+            <p>
+              From technical University I’ve learnt
+              <b>analytical and logical thinking</b> which is important in UX
+              profession.<br />
+              Since December 2019 I’ve been a member of <b>CodersCrew</b>:
+              non-profit organization operating in Wrocław, where I’m a part of
+              UX/UI Design team. Now with my team we’re working on the whole
+              programme of populization non- profit organizations in Poland,
+              which also includes making a website. I’m interested in design as
+              a process of solving problems, which could make a change in a
+              human (not only) life as in the whole world.<br />
+              I’m really into architecture, fantasy literature, <b>cats</b>, art
+              and many, many more. I'm a constant learner, there is so much
+              amazing staff to learn!
+            </p>
+            <p>
+              <br />
+              <b
+                >I would love to start my internship as a UX/UI Designer and
+                gain experience.</b
+              >
+            </p>
 
-                    <div class="resume">
-                        <a href="/projects/CV_Wiktoria_Sawicka_ENG.pdf" target="blank"><button>RESUME ENG</button></a>
-                        <a href="/projects/CV_Wiktoria_Sawicka_PL.pdf" target="blank"><button>RESUME PL</button></a>
-                    </div>
-                </div>
+            <div class="resume">
+              <a href="/projects/CV_Wiktoria_Sawicka_ENG.pdf" target="blank"
+                ><button>RESUME ENG</button></a
+              >
+              <a href="/projects/CV_Wiktoria_Sawicka_PL.pdf" target="blank"
+                ><button>RESUME PL</button></a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="CONTACT">
-        <h1>I'd love to hear from you<br>Get in touch!</h1>
-        <section class="contact">
-            <div class="adres"><img src="/images/icons/loc.png"></i>
-                <h1>Adress</h1>
-                <p>Wrocław, Poland</p>
-            </div>
-
-            <div class="email"><img src="/images/icons/email.png"></i>
-                <h1>Email me</h1>
-                <p>wsawicka9855@gmail.com</p>
-            </div>
-
-            <div class="call"><img src="/images/icons/text.png"></i>
-                <h1>Text me</h1>
-                <p>+48 732 443 201</p>
-            </div>
-
-            <!-- <div class="behance"><img src="/images/icons/be.png"></i>
-                <h1>Check me on Behance</h1>
-                <p>https://www.behance.net/wsawicka</p>
-            </div> -->
-
-            <div class="linkedin"><img src="/images/icons/lin.png"></i>
-                <h1>Check me on Linkedin</h1>
-                <p>https://bit.ly/2CJwmMr</p>
-            </div>
-
-        </section>
-        <div class="bottomtext">
-            <p>© 2020 Wiktoria Sawicka Designer/Projects</p>
+      <h1>I'd love to hear from you<br />Get in touch!</h1>
+      <section class="contact">
+        <div class="adres">
+          <img src="/images/icons/loc.png" />
+          <h1>Adress</h1>
+          <p>Wrocław, Poland</p>
         </div>
-    </footer>
-</body>
 
+        <div class="email">
+          <img src="/images/icons/email.png" />
+          <h1>Email me</h1>
+          <p>wsawicka9855@gmail.com</p>
+        </div>
+
+        <div class="call">
+          <img src="/images/icons/text.png" />
+          <h1>Text me</h1>
+          <p>+48 732 443 201</p>
+        </div>
+
+        <div class="linkedin">
+          <img src="/images/icons/lin.png" />
+          <h1>Check me on Linkedin</h1>
+          <p>https://bit.ly/2CJwmMr</p>
+        </div>
+      </section>
+      <div class="bottomtext">
+        <p>© 2020 Wiktoria Sawicka Designer/Projects</p>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<script src="./app.js"></script>

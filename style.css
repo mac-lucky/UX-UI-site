@@ -43,12 +43,13 @@ header {
 
 nav {
   width: 80%;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   position: fixed;
   left: 10%;
   color: rgba(0, 0, 0, 0.75);
+  z-index: 4;
 }
 
 .info {
@@ -60,7 +61,6 @@ nav {
   margin-top: 180px;
   font-size: 100px;
   color: rgba(0, 0, 0, 0.85);
-  ;
 }
 
 .undername {
@@ -110,7 +110,7 @@ main {
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -125,7 +125,7 @@ main {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
@@ -134,12 +134,12 @@ main {
 }
 
 .project:hover img {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0.4;
 }
 
 .project h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -153,7 +153,7 @@ main {
 }
 
 .project p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -175,32 +175,27 @@ main {
 .aboutme {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(180deg, #AF6595 0%, rgba(222, 195, 195, 0) 100%);
+  background: linear-gradient(180deg, #af6595 0%, rgba(222, 195, 195, 0) 100%);
 }
 
 .layout {
   width: 80%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   margin: auto;
 }
 
-.imageabout img {
+.layout img {
   width: 290px;
   height: 290px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
 }
 
-.imageabout {
-  position: relative;
-  padding-right: 13rem;
-  padding-left: 7rem;
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
+.aboutImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
 }
 
 .layout h1 {
@@ -218,9 +213,10 @@ main {
   font-size: 18px;
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.87);
+  width: 65%;
 }
 
-.layout p1 {
+.layout p:nth-child(1) {
   display: flex;
   letter-spacing: 0.15px;
   margin-bottom: 36px;
@@ -228,7 +224,7 @@ main {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.layout p2 {
+.layout p:nth-child(2) {
   display: flex;
   line-height: 150%;
   letter-spacing: 0.15px;
@@ -238,13 +234,13 @@ main {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.layout p3 {
+.layout p:nth-child(3) {
   line-height: 27px;
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.layout p4 {
+.layout p:nth-child(4) {
   line-height: 150%;
   margin-top: 36px;
   letter-spacing: 0.15px;
@@ -254,7 +250,7 @@ main {
 }
 
 footer {
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 
 footer h1 {
@@ -300,28 +296,27 @@ footer h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  padding-top: 12rem;
+  padding-top: 10rem;
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   color: rgba(0, 0, 0, 0.4);
 }
 
 .resume {
   display: flex;
   margin: auto;
-  width: 60%;
+  width: 80%;
   padding-top: 5rem;
   justify-content: space-between;
-  background-color:transparent;
+  background-color: transparent;
 }
 
-
 .resume button {
-  color: #AF6595;
-  border: 3px solid #AF6595;
+  color: #af6595;
+  border: 3px solid #af6595;
   border-radius: 5px;
-  background: -webkit-linear-gradient(30deg, transparent 50%, #AF6595 50%);
-  background: -linear-gradient(30deg, transparent 50%, #AF6595 50%);
+  background: -webkit-linear-gradient(30deg, transparent 50%, #af6595 50%);
+  background: -linear-gradient(30deg, transparent 50%, #af6595 50%);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 0%;
@@ -331,13 +326,11 @@ footer h1 {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  margin-left: 30px;
-  margin-bottom: 30px;
   cursor: pointer;
   letter-spacing: 0.46px;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
 }
@@ -348,7 +341,123 @@ footer h1 {
   letter-spacing: 0.46px;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
+}
+
+@media (max-width: 450px) {
+  .name {
+    font-size: 70px;
+  }
+
+  .projects {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .projects .project {
+    width: 100%;
+    height: 35vh;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    width: 100%;
+  }
+
+  .resume button {
+    margin-top: 3rem;
+  }
+  .layout {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text {
+    width: 100%;
+  }
+  .aboutImage {
+    display: flex;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+  .contact img {
+    margin-top: 4rem;
+  }
+  footer {
+    padding-top: 5rem;
+  }
+  .bottomtext {
+    padding-top: 5rem;
+  }
+}
+
+.icon {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .icon {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  nav {
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+  }
+
+  p.logo {
+    font-size: 20px;
+  }
+
+  .responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  nav ul li {
+    line-height: 40px;
+    width: 80%;
+    margin: auto;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
 }
