@@ -218,8 +218,9 @@ main {
 
 .layout p:nth-child(1) {
   display: flex;
+  text-align: center;
   letter-spacing: 0.15px;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -228,9 +229,8 @@ main {
   display: flex;
   line-height: 150%;
   letter-spacing: 0.15px;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   align-items: center;
-  text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
 
