@@ -175,7 +175,12 @@ main {
 .aboutme {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(180deg, #af6595 0%, rgba(222, 195, 195, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f5df4d 60.42%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .layout {
