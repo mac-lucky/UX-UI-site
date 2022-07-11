@@ -45,6 +45,7 @@ nav {
   margin-top: 180px;
   font-size: 120px;
   color: #0e4481;
+  font-family: "Playfair Display", serif;
 }
 
 .undername {
@@ -56,7 +57,7 @@ nav {
 
 p.logo {
   font-family: "Playfair Display", serif;
-  color: #0e4481;
+  color: #af6595;
   font-size: 24px;
   line-height: 80px;
   font-weight: bold;
@@ -243,6 +244,7 @@ footer h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
+  color: #0e4481;
 }
 
 .contact h1 {
@@ -252,6 +254,7 @@ footer h1 {
   font-size: 18px;
   letter-spacing: 0.15px;
   padding-top: 1rem;
+  color: rgb(0, 0, 0);
 }
 
 .contact {
@@ -289,18 +292,18 @@ footer h1 {
 .resume {
   display: flex;
   margin: auto;
-  width: 60%;
+  width: 100%;
   padding-top: 5rem;
-  justify-content: space-between;
+  justify-content: center;
   background-color: transparent;
 }
 
 .resume button {
-  color: #0e4481;
-  border: 3px solid #0e4481;
+  color: #af6595;
+  border: 3px solid #af6595;
   border-radius: 5px;
-  background: -webkit-linear-gradient(30deg, transparent 50%, #0e4481 50%);
-  background: -linear-gradient(30deg, transparent 50%, #0e4481 50%);
+  background: -webkit-linear-gradient(30deg, transparent 50%, #af6595 50%);
+  background: -linear-gradient(30deg, transparent 50%, #af6595 50%);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 0%;
@@ -413,6 +416,11 @@ footer h1 {
   footer {
     padding-top: 5rem;
   }
+
+  footer h1 {
+    color: #0e4481;
+  }
+
   .bottomtext {
     padding-top: 5rem;
   }
