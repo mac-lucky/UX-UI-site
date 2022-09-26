@@ -21,7 +21,7 @@ header {
   width: 100%;
   margin: auto;
   height: 100vh;
-  background: #f2d5ce;
+  background: #fff;
   display: flex;
 }
 
@@ -160,7 +160,8 @@ main {
 .aboutme {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(180deg, #f2d5ce 0%, rgba(222, 195, 195, 0) 100%);
+  /* background: linear-gradient(180deg, #f2d5ce 0%, rgba(222, 195, 195, 0) 100%); */
+  background: #fff;
 }
 
 .layout {
