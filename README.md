@@ -1,6 +1,6 @@
 # UX-UI-site
 
-![alt text](https://github.com/Mac-lucky/UX-UI-site/blob/master/images/screen.png?raw=true)
+![alt text](https://github.com/Mac-lucky/UX-UI-site/blob/master/dist/images/screen.png?raw=true)
 
 
 Freelance project for a client based on mockups made in Figma. Requested to be a desktop-only version for now.
