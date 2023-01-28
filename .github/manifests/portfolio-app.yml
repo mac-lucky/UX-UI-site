@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: simple-websites
+  name: portfolio-wiktoria
+spec:
+  selector:
+    matchLabels:
+      app: portfolio-wiktoria
+  replicas: 4 
+  template:
+    metadata:
+      labels:
+        app: portfolio-wiktoria
+    spec:
+      containers:
+      - name: portfolio-wiktoria
+        image: maclucky/ux-ui-site:latest
+        ports:
+        - containerPort: 80
