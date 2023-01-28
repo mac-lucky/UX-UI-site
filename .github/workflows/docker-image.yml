@@ -42,7 +42,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Run script to replace version in manifest
-        run: ./.github/scripts/deployment.sh {{date 'YYYYMMDD'}}
+        run: ./.github/scripts/deployment.sh {{date 'YYYYMMDDhh:mm'}}
         shell: bash
 
       - name: Update manifest for landingpage
