@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Set current date as env variable
-        run: echo "NOW=$(date +'%Y%m%dT%H%M')" >> $GITHUB_ENV  
+        run: echo "NOW=$(date +'%Y%m%d%H%M')" >> $GITHUB_ENV  
       - name: Echo current date
         run: echo $NOW 
 
@@ -23,7 +23,7 @@ jobs:
         with:
           images: maclucky/ux-ui-site
           tags: |
-            type=raw,value={{date +'%Y%m%dT%H%M'}}
+            type=raw,value={{date 'YYYYMMDDHHmm'}}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
