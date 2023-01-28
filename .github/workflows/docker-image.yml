@@ -23,7 +23,7 @@ jobs:
         with:
           images: maclucky/ux-ui-site
           tags: |
-            type=raw,value=$NOW
+            type=raw,value={{date +'%Y%m%dT%H%M'}}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
