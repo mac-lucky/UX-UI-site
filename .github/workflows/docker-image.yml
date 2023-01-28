@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
+      - name: Set current date as env variable
+        run: echo "NOW=$(date +'%Y%m%dT%H%M')" >> $GITHUB_ENV  
 
       - name: Docker meta
         id: meta
@@ -18,7 +21,7 @@ jobs:
         with:
           images: maclucky/ux-ui-site
           tags: |
-            type=raw,value={{date 'YYYYMMDDhhmm'}}
+            type=raw,value=$NOW
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -42,7 +45,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }} 
 
       - name: Run script to replace version in manifest
-        run: ./.github/scripts/deployment.sh $(date +'%Y-%m-%dT%H:%M')
+        run: ./.github/scripts/deployment.sh $NOW
         shell: bash
 
       - name: Update manifest for landingpage
