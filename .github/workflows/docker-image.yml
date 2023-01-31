@@ -60,7 +60,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      - name: Run script to replace version in manifest
+      - name: chmod +x
         run: |
           chmod +x .github/scripts/deployment.sh
 
@@ -68,7 +68,7 @@ jobs:
         run: ./.github/scripts/deployment.sh $NOW
         shell: bash
 
-      - name: Update manifest for landingpage
+      - name: Update manifest for ux ui site
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
