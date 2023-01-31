@@ -62,7 +62,7 @@ jobs:
 
       - name: Run script to replace version in manifest
         run: |
-          chmod=+x .github/scripts/deployment.sh
+          chmod +x .github/scripts/deployment.sh
 
       - name: Run script to replace version in manifest
         run: ./.github/scripts/deployment.sh $NOW
