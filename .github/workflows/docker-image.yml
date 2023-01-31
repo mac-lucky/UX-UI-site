@@ -80,4 +80,4 @@ jobs:
           user_email: "maciejkedziora98@gmail.com"
           user_name: "mac-lucky"
           destination_branch: "master"
-          commit_message: "Update app version"
+          commit_message: "Update docker image to $NOW"
