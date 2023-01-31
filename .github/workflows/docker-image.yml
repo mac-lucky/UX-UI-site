@@ -22,6 +22,7 @@ jobs:
 
       - name: Copy file from external repository
         run: |
+          mkdir -p .github/manifests
           cp k8s/portfolio-wiktoria/portfolio-app.yml .github/manifests/portfolio-app.yml
 
       - name: Delete the folder k8s
