@@ -24,14 +24,6 @@ jobs:
         run: |
           cp k8s/portfolio-wiktoria/portfolio-app.yml .github/manifests/portfolio-app.yml
 
-      - name: Commit changes
-        run: |
-          git config --global user.email "maciejkedziora98@gmail.com"
-          git config --global user.name "mac-lucky"
-          git add .github/manifests/portfolio-app.yml
-          git commit -m "Updating file from external repository"
-          git push origin master
-
       - name: Delete the folder k8s
         run: |
           rm -rf k8s
