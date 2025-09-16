@@ -1,5 +1,9 @@
 # UX-UI-site
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/maclucky/ux-ui-site)](https://hub.docker.com/r/maclucky/ux-ui-site)
+[![Docker Image Version](https://img.shields.io/docker/v/maclucky/ux-ui-site/latest)](https://hub.docker.com/r/maclucky/ux-ui-site/tags)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mac-lucky/UX-UI-site/docker-image.yml)](https://github.com/mac-lucky/UX-UI-site/actions)
+
 ![alt text](https://github.com/Mac-lucky/UX-UI-site/blob/master/dist/images/screen.png?raw=true)
 
 
