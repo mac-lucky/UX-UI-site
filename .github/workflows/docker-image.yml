@@ -34,4 +34,4 @@ jobs:
       push_to_dockerhub: true
       enable_security_scan: true
       smoke_test_script: |
-        docker run -d --name smoke "$SMOKE_IMAGE" && sleep 3 && docker exec smoke wget -qO- http://127.0.0.1:8080/ | head -1 && docker rm -f smoke
+        docker run -d --name smoke "$SMOKE_IMAGE" && sleep 3 && docker exec smoke wget -qO- http://127.0.0.1:8080/ > /tmp/smoke.html && grep -qi '<html' /tmp/smoke.html && docker rm -f smoke
