@@ -1,4 +1,4 @@
-FROM nginxinc/nginx-unprivileged:1.31-alpine@sha256:b54ac358b83fc6c965793fd271839b4ea4cdb6e99895bb19618cbc2ca152d972
+FROM nginxinc/nginx-unprivileged:1.31-alpine@sha256:6a23acdfca2b9cfbcec61419e3f1426bcbedb91362f2f19306a8567423bb4612
 
 LABEL org.opencontainers.image.source="https://github.com/mac-lucky/UX-UI-site"
 LABEL org.opencontainers.image.description="Static portfolio site for wsawicka.com, served by nginx"
