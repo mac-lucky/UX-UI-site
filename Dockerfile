@@ -7,6 +7,8 @@ LABEL org.opencontainers.image.description="Static portfolio site for wsawicka.c
 # upgrading at build picks them up without waiting for a base-image rebuild.
 # The base image runs as uid 101, so apk needs a root window.
 USER root
+# PKG_REFRESH is new on every CI build, so this RUN never comes from the layer cache.
+ARG PKG_REFRESH
 RUN apk upgrade --no-cache
 USER 101
 
