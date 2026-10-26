@@ -17,19 +17,23 @@ fail=0
 
 PAGES=(/ /projects/codersboard /projects/musicapp /projects/warsztaty)
 
-# Response head of one request, CRs stripped. An optional second argument is
-# sent as a request header.
+# Response head of one request, CRs stripped. Any further arguments are sent as
+# request headers. --max-time so a hung server fails the run instead of the job
+# timeout.
 fetch() {
-	local args=(-sS -D - -o /dev/null)
-	[ -n "${2:-}" ] && args+=(-H "$2")
-	curl "${args[@]}" "$BASE$1" 2>/dev/null | tr -d '\r'
+	local path=$1 args=(-sS --max-time 10 -D - -o /dev/null)
+	shift
+	for h in "$@"; do [ -n "$h" ] && args+=(-H "$h"); done
+	curl "${args[@]}" "$BASE$path" 2>/dev/null | tr -d '\r'
 }
 
 # One request, then assert on the status line and on headers. Header patterns are
-# matched case-insensitively against the full response head.
+# matched case-insensitively against the full response head. Arguments after the
+# fifth are request headers.
 check() {
-	desc=$1 path=$2 want_status=$3 want_header=${4:-} reject_header=${5:-} req_header=${6:-}
-	head=$(fetch "$path" "$req_header")
+	desc=$1 path=$2 want_status=$3 want_header=${4:-} reject_header=${5:-}
+	shift $(($# < 5 ? $# : 5))
+	head=$(fetch "$path" "$@")
 	status=$(printf '%s' "$head" | head -1 | awk '{print $2}')
 
 	if [ "$status" != "$want_status" ]; then
@@ -114,6 +118,7 @@ check "style-src has no unsafe-inline"     "/"                   200 'content-se
 check "html is gzipped when asked"         "/"                   200 '^content-encoding: gzip' '' 'Accept-Encoding: gzip'
 check "css is gzipped when asked"          "/style.css"          200 '^content-encoding: gzip' '' 'Accept-Encoding: gzip'
 check "gzip varies on Accept-Encoding"     "/"                   200 '^vary: accept-encoding' '' 'Accept-Encoding: gzip'
+check "gzip survives a proxy's Via header" "/"                   200 '^content-encoding: gzip' '' 'Accept-Encoding: gzip' 'Via: 1.1 edge'
 check "no gzip unless asked"               "/"                   200 '' '^content-encoding:'
 
 # Caching. Nothing here is content-hashed, so nothing may be `immutable`.
@@ -127,6 +132,7 @@ check "redirect carries the short policy"  "/projects/musicapp.html" 301 'cache-
 # Canonical URL shape.
 check "/index.html redirects"              "/index.html"         301 '^location: /$'
 check "/index redirects"                   "/index"              301 '^location: /$'
+check "query survives the /index.html 301" "/index.html?utm_source=x" 301 '^location: /\?utm_source=x$'
 check ".html extension collapses"          "/projects/musicapp.html" 301 '^location: /projects/musicapp$'
 check "query survives the redirect"        "/projects/musicapp.html?utm_source=x" 301 '^location: /projects/musicapp\?utm_source=x$'
 check "trailing slash collapses"           "/projects/musicapp/" 301 '^location: /projects/musicapp$'
@@ -142,9 +148,16 @@ check "directory without index is a 404"   "/projects"           404
 check "/50x.html redirects like any page"  "/50x.html"           301 '^location: /50x$'
 check "/50x is gone"                       "/50x"                404
 
-# Every third-party stylesheet and script a page loads must be allowed by the
-# CSP. Renovate bumps the cdnjs URLs in the HTML; a new library or origin there
-# fails here instead of silently losing its styles in the browser.
+# Per page, two checks on the served HTML.
+#
+# 1. Nothing the CSP would block or that would force 'unsafe-inline' back in:
+#    inline <script>, on*= handler attributes, style= attributes, <style>,
+#    javascript: URLs. No <iframe> either (frame-src falls back to 'self'), and
+#    no same-site link to a .html URL, which costs every click a 301.
+# 2. Every third-party URL a page loads is allowed by its CSP directive. Renovate
+#    bumps the cdnjs URLs in the HTML; a new library or origin there fails here
+#    instead of silently losing its styles in the browser. http:// URLs fail too,
+#    as mixed content.
 csp=$(fetch / | grep -i '^content-security-policy:' | cut -d: -f2-)
 directive() { printf '%s' "$csp" | tr ';' '\n' | sed -n "s/^ *$1 //p"; }
 allowed() {
@@ -157,17 +170,48 @@ allowed() {
 	done
 	return 1
 }
-script_src=$(directive script-src)
-style_src=$(directive style-src)
+has() { printf '%s' "$body" | grep -qiE "$1"; }
+# Third-party URLs in attribute $3 of the tags matching $2 (and, if given, $4).
+# A protocol-relative URL resolves to https: the site is only served over TLS.
+urls() {
+	printf '%s' "$1" | grep -oiE "<($2)[[:space:]][^>]*>" | grep -iE "${4:-.}" |
+		grep -oiE "[[:space:]]$3=\"(https?:)?//[^\"]*\"" | cut -d'"' -f2 | sed 's#^//#https://#'
+}
+# URLs on stdin that directive $1 (or default-src when it is unset) does not allow.
+uncovered() {
+	local value url
+	value=$(directive "$1")
+	[ -n "$value" ] || value=$(directive default-src)
+	while read -r url; do
+		[ -n "$url" ] && ! allowed "$url" "$value" && printf ' %s' "$url"
+	done
+}
+
 for p in "${PAGES[@]}"; do
-	body=$(curl -sS "$BASE$p" | tr '\r\n' '  ')
-	bad=""
-	while read -r url; do
-		[ -n "$url" ] && ! allowed "$url" "$script_src" && bad="$bad $url"
-	done < <(printf '%s' "$body" | grep -oiE '<script[^>]*>' | grep -oE 'src="https://[^"]*"' | cut -d'"' -f2)
-	while read -r url; do
-		[ -n "$url" ] && ! allowed "$url" "$style_src" && bad="$bad $url"
-	done < <(printf '%s' "$body" | grep -oiE '<link[^>]*>' | grep -i 'stylesheet' | grep -oE 'href="https://[^"]*"' | cut -d'"' -f2)
+	body=$(curl -sS --max-time 10 "$BASE$p" | tr '\r\n' '  ')
+
+	found=""
+	printf '%s' "$body" | grep -oiE '<script[^>]*>' | grep -qviE '[[:space:]]src=' && found="$found inline-script"
+	has '<[a-z][^>]*[[:space:]]on[a-z]+=' && found="$found handler-attribute"
+	has '<[a-z][^>]*[[:space:]]style=' && found="$found style-attribute"
+	has '<style[[:space:]>]' && found="$found style-element"
+	has 'javascript:' && found="$found javascript-url"
+	has '<iframe' && found="$found iframe"
+	has 'href="[^":]*[.]html' && found="$found internal-.html-link"
+	if [ -n "$found" ]; then
+		printf 'FAIL  %-50s found:%s\n' "$p has no inline code or .html links" "$found"
+		fail=1
+	else
+		printf 'ok    %s\n' "$p has no inline code or .html links"
+	fi
+
+	bad=$(
+		uncovered script-src < <(urls "$body" script src)
+		uncovered style-src < <(urls "$body" link href 'rel="?stylesheet')
+		uncovered img-src < <(urls "$body" link href 'rel="?[^">]*icon')
+		uncovered img-src < <(urls "$body" img src)
+		uncovered media-src < <(urls "$body" 'video|source' src)
+	)
 	if [ -n "$bad" ]; then
 		printf 'FAIL  %-50s not allowed by the CSP:%s\n' "CSP covers what $p loads" "$bad"
 		fail=1
