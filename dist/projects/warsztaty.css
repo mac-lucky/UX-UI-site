@@ -341,6 +341,10 @@ main {
   color: #0091ea;
 }
 
+.helper .helper-rightDesc .helper-desc {
+  color: #4a4956;
+}
+
 .helper .helper-rightDesc > img {
   width: 50%;
 }
