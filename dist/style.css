@@ -94,6 +94,12 @@ main {
   position: relative;
 }
 
+/* The caption sits inside the tile's link so it is clickable; keep the
+   link from recoloring its text. */
+.project a {
+  color: inherit;
+}
+
 .middle {
   transition: 0.5s ease;
   opacity: 0;
