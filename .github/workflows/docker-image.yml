@@ -33,5 +33,17 @@ jobs:
       ghcr_image: ghcr.io/mac-lucky/ux-ui-site
       push_to_dockerhub: true
       enable_security_scan: true
+      # Runs the image with the runtime restrictions a hardened pod applies, then
+      # asserts what nginx serves (scripts/test-nginx.sh). The step's bash has -e
+      # and pipefail; the trap prints nginx's log on a failure and removes the
+      # container on any exit.
       smoke_test_script: |
-        docker run -d --name smoke "$SMOKE_IMAGE" && sleep 3 && docker exec smoke wget -qO- http://127.0.0.1:8080/ > /tmp/smoke.html && grep -qi '<html' /tmp/smoke.html && docker rm -f smoke
+        docker run -d --name smoke -p 127.0.0.1:8080:8080 \
+          --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges \
+          "$SMOKE_IMAGE"
+        trap 'rc=$?; [ "$rc" -eq 0 ] || docker logs smoke; docker rm -f smoke >/dev/null; exit "$rc"' EXIT
+        for _ in $(seq 1 30); do
+          curl -fsS http://127.0.0.1:8080/health >/dev/null 2>&1 && break
+          sleep 1
+        done
+        scripts/test-nginx.sh http://127.0.0.1:8080
