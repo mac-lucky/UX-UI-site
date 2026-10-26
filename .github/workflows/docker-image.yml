@@ -25,8 +25,8 @@ jobs:
   build-and-push:
     uses: mac-lucky/actions-shared-workflows/.github/workflows/docker-cicd-reusable.yml@master
     secrets:
-      DOCKER_HUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      DOCKER_HUB_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+      DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+      DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
     with:
       app_name: ux-ui-site
       dockerhub_image: maclucky/ux-ui-site
